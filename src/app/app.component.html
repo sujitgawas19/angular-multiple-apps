@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<!-- <app-header></app-header> -->
+
+<div style="text-align:center">
+  <h1>
+    Welcome to Angular
+  </h1>
+</div>
+
+
+
+<router-outlet></router-outlet>
+
+
+<div *ngIf="display" class="alert alert-dark alert-offline text-center" [ngClass]="{'slide-in-bottom': showToast, 'slide-out-bottom': !showToast}" role="alert">
+  <strong>{{msg}}</strong>
+</div>
